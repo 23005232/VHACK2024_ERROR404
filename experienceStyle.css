@@ -1,0 +1,328 @@
+/* CSS styles for buttons */
+
+body, html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: .2s linear;
+  background: #333;
+}
+
+/* CSS styles for chat header */
+.chat-header {
+  background-color: #009688;
+  color: white;
+  padding: 10px;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 4vh;
+}
+
+.close-button{
+  background-color: transparent;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+  color: #d3d3d3;
+}
+
+.close-button:hover{
+  color:#3c4444;
+}
+
+.unread-messages {
+  display: flex;
+  align-items: center;
+}
+
+.unread-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align:center;
+  line-height: 18px;
+  margin-right: 5px; /* Adjust margin */
+}
+
+.unread-messages span:last-child {
+  margin-left: 5px; /* Adjust margin */
+}
+
+.friend-name {
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+  font-size: larger;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.points-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust as needed */
+  border-radius: 15px;
+  background-color: #3c4444;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.info-button{
+  background-color: transparent;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+  color: #d3d3d3;
+}
+
+.info-button:hover{
+  color:#3c4444;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link color */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover {
+  color: #3c4444;; /* Change color on hover */
+}
+  
+/* CSS styles for chat box */
+#chat-box {
+    margin-top: 0; /* Adjusted to remove space between header and chat box */
+    padding: auto;
+    background-color: #111;
+    border-radius: 0 !important; /* Remove rounded edges */
+    height: 85vh; /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+/* CSS styles for scrollbar */
+#chat-box::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+#chat-box::-webkit-scrollbar-track {
+    background: #121212; /* Track color */
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background: #3c4444; /* Thumb color */
+    border-radius: 5px; /* Border radius */
+}
+
+#chat-box::-webkit-scrollbar-thumb:hover {
+    background: #8e8e8e; /* Thumb color on hover */
+}
+
+  
+  /* CSS styles for chat messages */
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+  }
+  
+  /* CSS styles for sender and receiver messages */
+  .sender {
+    justify-content: flex-end;
+  }
+  
+  .receiver {
+    justify-content: flex-start;
+  }
+  
+  /* CSS styles for profile pictures */
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  /* CSS styles for message info */
+.sender-info {
+  align-items: end;
+  margin-bottom: 5px; /* Adjust margin as needed */
+  position: relative;
+}
+
+.message-name {
+  font-size: 10px; /* Adjust font size as needed */
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #FFFFFF;
+
+}
+  
+  /* CSS styles for message rectangles */
+  .message-rectangle {
+    padding: 10px;
+    bottom: 0;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-weight:375;
+  }
+  
+  /* CSS styles for sender and receiver rectangles */
+  .sender .message-rectangle {
+    background-color:#3c4444;
+  }
+  
+  .receiver .message-rectangle {
+    background-color: #009688;
+  }
+  
+  /* CSS styles for message input area */
+#message-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #111111; /* Adjust background color */
+    height: 5vh;
+}
+
+#message-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 20px; /* Adjust border radius */
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 8px 20px;
+    background-color: #009688; /* Adjust button color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Adjust border radius */
+    cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #00796b; /* Change button color on hover */
+  color: #f0f0f0; /* Change text color on hover */
+}
+
+
+.intro-container {
+  text-align: center;
+  bottom: 0;
+}
+
+#info {
+  background-color: #009688; /* Adjust background color as needed */
+}
+
+.container{
+  padding: 15px 9%;
+  padding-bottom: 80px;
+}
+
+.heading{
+  text-align: center;
+  padding-bottom: 15px;
+  color:#FFFFFF;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 30px;
+}
+
+.box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap:15px;
+}
+
+.box{
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.box:hover{
+  color:#00796b;
+}
+
+.box:hover p{
+  color:#00796b;
+}
+
+
+p{
+  color:#444;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+#info2 {
+  background-color: #121212; /* Adjust background color as needed */
+}
+
+.container2{
+  padding: 15px 20%;
+  padding-bottom: 60px;
+  position: relative;
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Fraud-Alert-Verse-Credit-Freeze.jpg);
+    background-size : cover;
+    background-position: center;
+}
+
+.heading2{
+  text-align: center;
+  padding-bottom: 15px;
+  color:#FFFFFF;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 30px;
+  z-index: ;
+}
+
+.box-container2{
+  display: grid;
+  gap:15px;
+  z-index: 2;
+}
+
+.box2{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.325);
+  border-radius: 5px;
+  background: #009688;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.box2:hover{
+  background: #00796b;
+}
+
+.box img{
+  height: 80px;
+}
+
+
+.box2 p{
+  color:#fff;
+  font-size: 20px;
+  line-height: 1.8;
+}

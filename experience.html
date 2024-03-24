@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box</title>
+  <link rel="stylesheet" href="experienceStyle.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="aos-by-red.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<div>
+
+<!-- Header -->
+<div class="chat-header">
+    <div class="unread-messages">
+      <a href="#" onclick="history.go(-1);">
+      <button class="close-button">&lt;</button>
+      </a>
+      <span class="unread-count" id="unread-count">3</span>
+    </div>
+    <div class="friend-name">SOCIAL MEDIA SCHEMES</div>
+    <div class="points-box">
+      Points : <span id="point-value"> 0</span>
+    </div>
+    <a href="#info">...</a>
+  </div>
+  
+  <!-- Chat box -->
+  <div id="chat-box">
+    <!-- Messages will be displayed here -->
+    <div id="messages-container"></div>
+  </div>
+
+  <!-- Message input area -->
+  <div id="message-input-container">
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <button id="send-button">Send</button>
+  </div>
+
+  <section id="info">
+    <div class="container">
+      <h1 class="heading">Malaysia's Most Common Social Media Scam</h1>
+      <div class="box-container" data-aos="fade-up">
+        <div class="box">
+          <div class="div" data-aos="fade-up"></div>
+          <i class='fas fa-globe' style='font-size:60px'></i>
+          <p>76% of Malaysian Internet users are familiar with the term "Internet Scam"</p>
+        </div>
+  
+        <div class="box">
+          <i class='far fa-money-bill-alt' style='font-size:60px'></i>
+          <p>63% of surveyed Malaysian scam victims reported monetary losses</p>
+        </div>
+  
+        <div class="box">
+          <div class="div" data-aos="fade-up"></div>
+          <i class='far fa-address-card' style='font-size:60px'></i>
+          <p>1 in 5 Malaysians have fallen victim to internet auction scams</p>
+        </div>
+  
+        <div class="box">
+          <div class="div" data-aos="fade-up"></div>
+          <i class='far fa-sad-tear' style='font-size:60px'></i>
+          <p>46% of Malaysians surveyed have experienced Internet scams</p>
+        </div>
+  
+        <div class="box">
+          <div class="div" data-aos="fade-up"></div>
+          <i class='fas fa-hand-holding-usd' style='font-size:60px'></i>
+          <p>The average financial loss per person from Internet scams in Malaysia is $7,050MR</p>
+        </div>
+  
+        <div class="box">
+          <div class="div" data-aos="fade-up"></div>
+          <i class='fas fa-heartbeat' style='font-size:60px'></i>
+          <p>1 in 5 Malaysians have fallen victim to online dating scams</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="info2">
+    <div class ="container2">
+      <div class="background-overlay">
+      <h1 class="heading2">Malaysia's Top 5 Ways To Avoid Scam</h1>
+        <div class="box-container2">
+          <div class="box2" data-aos="fade-right">
+            <p>Delete suspicious emails</p>
+          </div>
+
+          <div class="box2" data-aos="fade-left">
+            <p>Ignore advertisements that appear 'too good to be true'</p>
+          </div>
+
+          <div class="box2" data-aos="fade-right">
+            <p>Update your anti-malware software</p>
+          </div>
+
+          <div class="box2" data-aos="fade-left">
+            <p>Do research about scams</p>
+          </div>
+
+          <div class="box2" data-aos="fade-right">
+            <p>Share knowledge with friends and family through social media</p>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+  <script src="experienceScript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

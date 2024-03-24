@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="notiStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Notifications page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button id="backButton" onclick="window.location.href = 'homepagevip.html';"><i class="fas fa-arrow-left"></i></button>
+        <div class="notif_box">
+          <h2 class="title">Notifications</h2>
+          <span id="notifes"></span>
+        </div>
+        <p id="mark_all">Mark all as read</p>
+      </header>
+      <main>
+        <div class="notif_card unread">
+          <img src="avatar-mark-webber.webp" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Mark Webber</strong> reacted to your recent post
+              <b>My first earn! Thanks to my advisor, Eric.</b>
+            </p>
+            <p class="time">1m ago</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="avatar-angela-gray.webp" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Week 12 Resources have been uploaded in Forum.</strong>Check it out in the link below.
+            </p>
+            <p class="time">5m ago</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="avatar-jacob-thompson.webp" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Jacob Thompson</strong> has joined the group
+              <strong class="link">Premium Smart Investor</strong>
+            </p>
+            <p class="time">1 day ago</p>
+          </div>
+        </div>
+        <div>
+          <div class="notif_card">
+          <div class="message_card">
+            <img
+            src="avatar-rizky-hasanuddin.webp"
+            alt="avatar"
+          />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Rizky Hasanuddin</strong> sent you a private message
+            </p>
+            <p class="time">5 days ago</p>
+          </div>
+          </div>
+        </div>
+        <div class="message">
+              <p>
+                Hey, it's our time again. The advisor meeting session is going to start soon. Click the link below to join the meeting.
+            </p>
+            </div>
+        </div>
+        
+        <div class="notif_card">
+          <img src="avatar-kimberly-smith.webp" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Kimberly Smith</strong> commented on your picture
+            </p>
+            <p class="time">1 week ago</p>
+          </div>
+          <img src="pic2.jpg" class="chess_img" alt="chess" />
+        </div>
+        <div class="notif_card">
+          <img src="avatar-nathan-peterson.webp" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Nathan Pererson</strong> reacted to your recent post
+              <b>Completed pump and dump scam without being scam!</b>
+            </p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="notif_card">
+          <img src="avatar-anna-kim.webp" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Anna Kim</strong> has joined the group
+              <strong class="link">Premium User</strong>
+            </p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="notiScript.js"></script>
+  </body>
+</html>

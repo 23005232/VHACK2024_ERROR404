@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skip The Scam-a-rama</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="hpStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/50dd672d01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+        <nav>
+            <header>
+                <a class="logo"></a>
+                    <div class="containerLogo" onclick="window.location.href = 'homepage.html';">
+                        <i class="fa-solid fa-masks-theater"></i>
+                        <div class="text">
+                            <a href="#" class="logo">Skip the</a><br><a href="#" class="logo1">Scam-a-rama</a>
+                        </div>
+                    </div>
+                </a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <ul class="navbar">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience" id="experienceBtn">Experience</a></li>
+                    <li><a href="#test" id="testBtn">Test</a></li>
+                    <li><a href="#checker">Check</a></li>
+                    <li><a href="#forum" id="forumBtn">Forum</a></li>
+                    </ul>
+                <a href="login.html" class="login-btn"><button type="button" id="loginbutton"><span></span>Log In</button></a>
+                
+        </header>
+    </nav>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2 class="modal-title">Sign in required!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Please log in/ sign up to unlock extra free resources.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="notNowBtn">Not Now</button>
+                <a href="login.html" class="login-btn"><button type="button" id="loginBtn">Log In / Sign Up</button></a>
+            </div>
+        </div>
+    </div>
+    
+      
+     
+    <section class="home" id="home">
+        <div class="home-text">
+         <h1>Be Smart<br>Alert Fraud</h1>
+         <h2>Verify the legitimacy of any website now to protect yourself from fraud!<br>Click here to check and ensure your safety.</h2>
+         <a href="#checker" class="btn">Click Me</a>
+        </div>
+ 
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn"id= "radio1">
+                <input type="radio" name="radio-btn"id= "radio2">
+                <input type="radio" name="radio-btn"id= "radio3">
+                <!-- <input type="radio" name="radio-btn"id= "radio4"> -->
+                <div class="slide first">
+                    <img src="pic8.png" alt="pic8" id="pic8">
+                </div>
+                <div class="slide second">
+                    <img src="pic9.png" alt="pic9" id="pic9">
+                </div>
+                <div class="slide third">
+                    <img src="pic11.jpg" alt="pic10" id="pic11">
+                </div>
+                <!-- <div class="slide third">
+                    <img src="pic11.jpg" alt="pic11" id="pic11">
+                </div> -->
+                <div class="navigation-auto">
+                    <div class=auto-btn1></div>
+                    <div class=auto-btn2></div>
+                    <div class=auto-btn3></div>
+                    <!-- <div class=auto-btn4></div> -->
+                </div>
+            
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <!-- <label for="radio4" class="manual-btn"></label> -->
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter=1;
+            setInterval(function(){
+                document.getElementById('radio'+ counter).checked =true;
+                counter++;
+                if(counter >3){
+                    counter=1;
+                }
+            },5000);
+        </script>
+       
+    </div>
+</div>
+
+ </section>
+
+ <section id="about">
+    <div class="aboutus_class">
+        <h1 id="aboutus_content">About Us</h1><br><br>
+        <div class="row">
+            <div class="col">
+                <img src="Fraud1.webp" alt="About Us Image" class="about-image animate-left"><br><br>
+            </div>
+            <div class="scroll-animation" id="about-text">
+                <h4><p>We are a dedicated team focused on combating fraud, particularly in the investment sector. Utilizing technology and innovation, we provide practical solutions to combat financial fraud and foster a secure investment environment. Our primary aim is to create a safer atmosphere for investors by offering innovative solutions to identify, educate, prevent, and combat fraudulent activities in the capital market.</p></h4><br><br><br>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col1">
+                <div class="box vision-box">
+                    <i class="fas fa-eye"></i>
+                    <h3>VISION</h3>
+                    <br><p><h4>Building Secure Investment Ecosystem</h4></p>
+                    <br><p><h6>Create a trustworthy and secure investment environment by leveraging technology and knowledge to combat financial fraud effectively.</h6></p>
+                </div>
+            </div>
+            <div class="col1">
+                <div class="box mission-box">
+                    <div class=".centered-col">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>MISSION</h3>
+                        <br><p><h4>Empowering Investors Against Fraud</h4></p>
+                        <br><p><h6>By education and tools to recognize and avoid fraud with user-friendly interfaces for verifying investment opportunities and fostering a supportive community.</h6></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col1">
+                <div class="box values-box">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3>VALUES</h3>
+                    <br><p><h4>Financial Literacy and Transparency</h4></p>
+                    <br><p><h6>Safeguarding assets and fostering mutual learning by promoting financial literacy and transparency while building a community of informed investors.</h6></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="join-us">
+            <br><h4>Join us in our mission to combat financial fraud, let us build a safer and more reliable investment landscape for everyone.</h4>
+            <a href="login.html"><button type="button" id="lmore_button"><span></span>Learn More </button></a>
+        </div>
+    </div>
+</section>
+
+
+<section id="experience">
+    <section id="experience">
+        <div class="container1">
+
+            <h1 class="heading">Experience</h1>
+        
+            <div class="box-container1">
+        
+                <div class="box1">
+                    <img src="icon1.1.jpg" alt="">
+                    <h3>Ponzi Scheme</h3>
+                    <p>Have you ever been promised high investment returns with little or no risk? Click in to learn more.</p>
+                    <button class="btn read-more-btn">Try Me</button>
+                </div>
+        
+                <div class="box1">
+                    <img src="icon2.1.jpg" alt="">
+                    <h3>Cryptocurrency Scheme</h3>
+                    <p>Can you believe that cryptocurrency scams can result in losses<br> as high as $25 billion? </p>
+                    <button class="btn read-more-btn">Try Me</button>
+                </div>
+        
+                <div class="box1">
+                    <img src="icon3.1.png" alt="">
+                    <h3>Social Media Scheme</h3>
+                    <p>Have you seen ads impersonating famous people to promote products?<br> Ah ha, that's something we want to discuss here.</p>
+                    <button class="btn read-more-btn">Try Me</button>
+                </div>
+        
+                <div class="box1">
+                    <img src="icon4.2.jpg" alt="">
+                    <h3>Affinity fraud</h3>
+                    <p>It's time to uncover the hidden secrets behind affinity fraud. Learn more about the risks and how to protect yourself.</p>
+                    <button class="btn read-more-btn">Try Me</button>
+                </div>
+        
+                <div class="box1">
+                    <img src="p&d.png" alt="">
+                    <h3>Pump & Dump</h3>
+                    <p>Do you want to know the dark story of 'p&d' in the stock market? <br>Experience now!</p>
+                    <button class="btn read-more-btn">Try Me</button>
+                </div>
+        
+                <div class="box1">
+                    <img src="icon6.1.jpg" alt="">
+                    <h3>Loan scam</h3>
+                    <p>If there are hidden costs in the fine print, especially those payable upfront before receiving the loan, be wary!</p>
+                    <button class="btn read-more-btn">Try Me</button>
+                </div>
+        
+            </div>
+
+    </section>
+</section>
+<section id="checker">
+    <div class="container">
+        <h1 class="title">Website Detector</h1> <!-- Added title -->
+        <h1>To begin, type or paste a website address here</h1><br><br>
+        <div class="input-section">
+          <input type="text" id="websiteInput" placeholder="Enter website URL">
+          <button onclick="checkWebsite()">Check Website</button>
+        </div>
+        <div class="result" id="result">
+          <!-- Result will be displayed here -->
+        </div>
+        <div class="chart-image-section">
+          <div class="chart-container">
+            <canvas id="pie-chart"></canvas>
+          </div>
+      
+        </div>
+        <button onclick="goBack()" id="backButton" style="display: none;">Clear</button> 
+      </div>
+    
+        <!-- Include Chart.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Include SweetAlert library -->
+        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+        <!-- Include your custom JavaScript file -->
+        <!-- <script src="Script.js"></script> -->
+        <script> 
+        function valid(){
+            swal({
+              title: "YES! VALID WEBSITE!",
+              text: "This is a safe website.",
+              icon: "correctpic.png", // Specify the URL of your custom image here
+              button: "More info",
+            }).then((value) => {
+              displayResult(validWebsiteData);});
+            }
+              
+            
+          
+          function invalid(){
+            swal("OH NO! INVALID WEBSITE!", "This website is not safe.", "wrongpic.png", {
+                button: "More info",
+            }).then((value) => {
+              displayResult(invalidWebsiteData);});
+          }</script>
+</section>
+
+
+<!-- footer start -->
+<section id="contact">
+<div class="footer">
+    <div class="main">
+        <div class="col_contact">
+            <h4>Menu Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#test">Test</a></li>
+                <li><a href="#checker">Check</a></li>
+                <li><a href="#forum">Forum</a></li>
+
+            </ul>
+        </div>
+        <div class="col_contact">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="col_contact">
+            <h4>Sponsorship</h4>
+            <ul>
+                <li><a href="#">Lezada Online Shopping</a></li>
+                <li><a href="#">Maskin Robbin Shop</a></li>
+                <li><a href="#">Kentacky Fried Chicken</a></li>
+                <li><a href="#">Tecos Shopping Mall</a></li>
+                <li><a href="#">Fresh Fruit Shop </a></li>
+                <li><a href="#">The Best Pharmacy</a></li>
+
+            </ul>
+        </div>
+
+       
+
+        <div class="col_contact">
+            <h4>Contact Us</h4>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+</section>
+
+<footer>
+    <div style="color:black;"> &copy; 2024 Scam-a-rama | All Rights Reserved</div>
+</footer>
+
+<script src="hpScript.js"></script>
+<script type = "text.javascript" src="js/hpScript.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
+
