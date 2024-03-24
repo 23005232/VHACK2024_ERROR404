@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #061667;
+  }
+  
+  .wrapper {
+    max-width: 1090px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px; /* Add space between header and plans */
+  }
+  
+  /* Add this CSS for the arrow */
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Modify the header styles */
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 20px;
+    position: relative; /* Add position relative for absolute positioning of the arrow */
+  }
+  
+  .header h1 {
+    color: #fff;
+  }
+  
+  .header #backButton {
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: left; /* Align the arrow to the left */
+  }  
+  
+  .table {
+    background: #fff;
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s; /* Add transition for hover effect */
+  }
+  
+  .table:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+  }
+.table .price-section{
+  display: flex;
+  justify-content: center;
+}
+.table .price-area{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  line-height: 117px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.price-area .inner-area .text{
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  top: -22px;
+  left: 10px;
+}
+.price-area .inner-area .price{
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 9px;
+}
+
+.price-area .inner-area .month{
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    bottom: -40px;
+    right: 15px;
+  }
+.table .package-name{
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  position: relative;
+}
+.table .package-name::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  font-weight: 500;
+  background: #fff;
+  padding: 0 15px;
+  transform: translate(-50%, -50%);
+}
+.table .features li{
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .list-name{
+  font-size: 17px;
+  font-weight: 400;
+}
+.features li .icon{
+  font-size: 15px;
+}
+.features li .icon.check{
+  color: #2db94d;
+}
+.features li .icon.cross{
+  color: #cd3241;
+}
+.table .btn{
+  width: 100%;
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+}
+.table .btn button{
+  width: 80%;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.table .btn button:hover{
+  border-radius: 5px;
+}
+.basic .features li::selection{
+  background: #ffd861;
+}
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+  background: #ffd861;
+}
+.basic .btn button{
+  border: 2px solid #ffd861;
+  background: #fff;
+  color: #ffd861;
+}
+.basic .btn button:hover{
+  background: #ffd861;
+  color: #fff;
+}
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area{
+  background: #b392e8;
+}
+.premium .btn button{
+    border: 2px solid #a474f1;
+    background: #fff;
+    color: #a474f1;
+  }
+.premium .btn button:hover{
+    background: #a474f1;
+    color: #fff;
+}
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+  background: #43ef8b;
+}
+.ultimate .btn button{
+  border: 2px solid #43ef8b;
+  color: #43ef8b;
+  background: #fff;
+}
+.ultimate .btn button:hover{
+  background: #43ef8b;
+  color: #fff;
+}
+.basic .package-name{
+  background: #ffecb3;
+}
+.premium .package-name{
+  background: #d0b3ff;
+}
+.ultimate .package-name{
+  background: #baf8d4;
+}
+.basic .package-name::before{
+  content: "Basic";
+}
+.premium .package-name::before{
+  content: "Premium";
+  font-size: 24px;
+}
+.ultimate .package-name::before{
+  content: "Ultimate";
+  font-size: 24px;
+}
+@media (max-width: 1020px) {
+  .wrapper .table{
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper .table{
+    width: 100%;
+  }
+}
+::selection{
+  color: #fff;
+}
+.table .ribbon{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+}
+.table .ribbon::before,
+.table .ribbon::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+  display: block;
+  border: 7px solid #4606ac;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.table .ribbon::before{
+  top: 0px;
+  right: 15px;
+}
+.table .ribbon::after{
+  bottom: 15px;
+  left: 0px;
+}
+.table .ribbon span{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: rotate(-45deg);
+  width: 200px;
+  background: #a26bfa;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+
+/* Modal styles */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Icon styles */
+.icon {
+  color: #45a049;
+  font-size: 36px;
+  margin-bottom: 20px;
+}

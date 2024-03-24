@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Detector</title>
+<link rel="stylesheet" href="web.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Website Detector</h1> <!-- Added title -->
+  <h1>To begin, type or paste a website address here</h1>
+  <div class="input-section">
+    <input type="text" id="websiteInput" placeholder="Enter website URL">
+    <button onclick="checkWebsite()">Check Website</button>
+  </div>
+  <div class="result" id="result">
+    <!-- Result will be displayed here -->
+  </div>
+  <div class="chart-image-section">
+    <div class="chart-container">
+      <canvas id="pie-chart"></canvas>
+    </div>
+  </div>
+</div>
+<button onclick="goBack()" id="backButton" style="display: none;">Clear</button> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="web.js"></script>
+</body>
+</html>

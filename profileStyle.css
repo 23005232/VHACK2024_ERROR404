@@ -1,0 +1,202 @@
+body {
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.ui-w-80 {
+    width : 80px;
+    height: auto;
+}
+
+.btn-default {
+    border-color: rgba(24, 28, 33, 0.1);
+    background  : rgba(0, 0, 0, 0);
+    color       : #4E5155;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background  : transparent;
+    color       : #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+.btn-facebook {
+    border-color: rgba(0, 0, 0, 0);
+    background  : #3B5998;
+    color       : #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0, 0, 0, 0);
+    background  : #000;
+    color       : #fff;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+/* Add this CSS for the 3D arrow button */
+.arrow-button {
+    position: relative; /* Change position to relative */
+    display: inline-block; /* Display as inline-block to stay next to text */
+    background-color: #007bff; /* Set the background color */
+    color: white; /* Set the text color */
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    font-size: 24px; /* Set the font size */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for 3D effect */
+    transition: transform 0.3s ease;
+}
+
+.arrow-button:hover {
+    transform: scale(1.1); /* Add a hover effect */
+}
+
+.arrow-icon {
+    margin-left: 2px; /* Adjust the margin as needed */
+}
+
+/* Style the "Profile settings" text */
+.profile-settings-text {
+    display: inline-block; /* Display as inline-block */
+    vertical-align: middle; /* Align vertically to middle */
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+  }
+  
+  /* Button styles */
+  #modalOKButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #modalOKButton:hover {
+    background-color: #45a049;
+  }
+  
+  /* Icon styles */
+  .icon {
+    color: #45a049;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  

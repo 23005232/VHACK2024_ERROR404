@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="subsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Subscription Plans</h1>
+            <button id="backButton" onclick="window.location.href = 'subscrbevip.html';" class="arrow-left"><i class="fas fa-arrow-left"></i></button>
+          </div>
+          
+           <!-- Purchase Done Modal -->
+    <div class="modal" id="purchaseDoneModal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <i class="icon fas fa-check-circle"></i>
+          <h2>Purchase Done!</h2>
+          <p><br>You have successfully purchased the package.<br></p>
+          <button onclick="window.location.href = 'homepagevip.html';">OK</button>
+      </div>
+  </div>
+
+  <script>
+    function openPurchaseModal() {
+        const modal = document.getElementById("purchaseDoneModal");
+        modal.style.display = "block";
+
+        // Close the modal if the user clicks on the close button or outside the modal
+        window.onclick = function (event) {
+            if (event.target == modal || event.target == document.querySelector(".close")) {
+                modal.style.display = "none";
+            }
+        };
+    }
+</script>
+
+    <div class="table basic">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">RM</span>
+            <span class="price">9</span>
+            <span class="month">/month</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">1 Hour Meeting With Advisor per Week</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Free 49 Points per Day</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Premium Investment Resources Access</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Free Workshop With Professional Investors</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button onclick="openPurchaseModal()">Purchase</button></div>
+    </div>
+    <div class="table premium">
+      <div class="ribbon"><span>Top Pick</span></div>
+      <div class="price-section">
+        <div class="price-area">
+            <div class="inner-area">
+                <span class="text">RM</span>
+                <span class="price">19</span>
+                <span class="month">/month</span>
+              </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+            <span class="list-name">2 Hour Meeting With Advisor per Week</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Free 99 Points per Day</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Premium Investment Resources Access</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Free Workshop With Professional Investors</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+      </ul>
+      <div class="btn"><button onclick="openPurchaseModal()">Purchase</button></div>
+    </div>
+    <div class="table ultimate">
+      <div class="price-section">
+        <div class="price-area">
+            <div class="inner-area">
+                <span class="text">RM</span>
+                <span class="price">29</span>
+                <span class="month">/month</span>
+              </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+            <span class="list-name">5 Hour Meeting With Advisor per Week</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Free 199 Points per Day</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Premium Investment Resources Access</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Free Workshop With Professional Investors</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+      </ul>
+      <div class="btn"><button onclick="openPurchaseModal()">Purchase</button></div>
+    </div>
+  </div>
+
+</body>
+</html>

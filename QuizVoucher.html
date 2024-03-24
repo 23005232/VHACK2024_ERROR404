@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Rewards</title>
+    <link rel="stylesheet" href="QuizVoucherStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container1" onclick="window.location.href = 'homepagenormal.html';">
+        <i class="fa-solid fa-masks-theater"></i>
+        <div class="text">
+            <a href="#" class="logo">Skip the</a><br><a href="#" class="logo1">Scam-a-rama</a>
+        </div>
+    </div>
+    <span class="close-icon" id="close-icon" onclick="goBack()"><i class="fas fa-times"></i></span>
+
+
+    <div class="container">
+        <div class="points">
+            <h2>Your Points: <span id="user-points">6000</span></h2>
+        </div>
+        <div class="box-container" data-aos="fade-up">
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher1.jpg" alt="KENTACKY FRIED CHICKEN">
+                    <h3 class="shop-name">KENTACKY FRIED CHICKEN</h3>
+                    <p class="details">RM 1 voucher</p>
+                    <p class="price">$1000</p>
+                    <button onclick="redeemVoucher(1000)">Redeem</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher2.jpg" alt="MASKIN ROBBIN SHOP">
+                    <h3 class="shop-name">MASKIN ROBBIN SHOP</h3>
+                    <p class="details">RM 2 voucher</p>
+                    <p class="price">$2000</p>
+                    <button onclick="redeemVoucher(2000)">Redeem</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher3.jpg" alt="LEZADA">
+                    <h3 class="shop-name">LEZADA ONLINE SHOPPING</h3>
+                    <p class="details">RM 3 voucher</p>
+                    <p class="price">$3000</p>
+                    <button onclick="redeemVoucher(3000)">Redeem</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher4.jpg" alt="TECOS">
+                    <h3 class="shop-name">TECOS SHOPPING MALL</h3>
+                    <p class="details">RM 4 voucher</p>
+                    <p class="price">$4000</p>
+                    <button onclick="redeemVoucher(4000)">Redeem</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher5.jpg" alt="FRESH FRUIT SHOP">
+                    <h3 class="shop-name">FRESH FRUIT SHOP</h3>
+                    <p class="details">RM 5 voucher</p>
+                    <p class="price">$5000</p>
+                    <button onclick="redeemVoucher(5000)">Redeem</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher6.jpg" alt="THE BEST PHARMACY">
+                    <h3 class="shop-name">THE BEST PHARMACY</h3>
+                    <p class="details">RM 6 voucher</p>
+                    <p class="price">$6000</p>
+                    <button onclick="redeemVoucher(6000)">Redeem</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher7 .png" alt="HAPPY GROCERY">
+                    <h3 class="shop-name">HAPPY GROCERY</h3>
+                    <p class="details">RM 7 voucher</p>
+                    <p class="price">$7000</p>
+                    <button onclick="redeemVoucher(7000)">Redeem</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher8.jpg" alt="UNCLE CHANG RESTAURANT">
+                    <h3 class="shop-name">UNCLE CHANG RESTAURANT</h3>
+                    <p class="details">RM 8 voucher</p>
+                    <p class="price">$8000</p>
+                    <button onclick="redeemVoucher(8000)">Redeem</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="div" data-aos="fade-up"></div>
+                <div class="voucher">
+                    <img src="voucher9.jpg" alt="ICY ACCESSORIES">
+                    <h3 class="shop-name">ICY ACCESSORIES</h3>
+                    <p class="details">RM 2 voucher</p>
+                    <p class="price">$2000</p>
+                    <button onclick="redeemVoucher(2000)">Redeem</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+
+		function goToHome() {
+            window.location.href = 'homepagenormal.html';
+        }
+
+        function goBack() {
+            window.location.href = 'QuizWelcomePage.html'
+        }
+
+        function redeemVoucher(points) {
+            var userPoints = parseInt(document.getElementById("user-points").innerText);
+            if (userPoints >= points) {
+                // Perform redemption logic here (e.g., deduct points, display success message)
+                alert("Voucher redeemed successfully!");
+                // Update user's points after redemption (e.g., deduct points)
+                document.getElementById("user-points").innerText = userPoints - points;
+            } else {
+                alert("You don't have enough points to redeem this voucher.");
+            }
+        }
+    </script>
+</body>
+</html>

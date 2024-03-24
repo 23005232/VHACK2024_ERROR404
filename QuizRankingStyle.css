@@ -1,0 +1,240 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 20%;
+    padding-bottom: 60px;
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg1.jpg);
+    background-size : cover;
+    background-position: center;
+    background-attachment: fixed;
+	height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon {
+    font-size:45px;
+    position: fixed; /* Position the icon relative to the viewport */
+    top: 10px; /* Adjust this value to position the icon vertically */
+    right: 30px; /* Adjust this value to position the icon horizontally */
+    cursor: pointer;
+    padding-left: 5px;
+    padding-top: 5px;
+    color:#ce9aa7;
+}
+
+.close-icon :hover{
+    color: #c16c83;
+}
+
+.logo{ 
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    vertical-align: bottom; 
+    font-family:sans-serif;
+}
+.logo1{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    vertical-align: top; 
+    font-family:sans-serif;
+   
+}
+.text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px; /* Adjust the spacing between the icon and the text */
+
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    padding-top:10px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    
+}
+
+.container1 i,
+.container1 .text,
+.container1:hover .logo,
+.container1:hover .logo1 {
+    color: white; /* Set default color */
+    transition: color 0.3s; /* Add transition effect */
+}
+
+.container1:hover i,
+.container1:hover .text,
+.container1:hover .logo,
+.container1:hover .logo1{
+    color: #c16c83; /* Change color on hover */
+}
+
+.fa-masks-theater{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.wrapper {
+	width: 80%; /* Adjust width as needed */
+    height: auto; /* Set height to auto or specific value */
+    max-width: 600px;
+	position: relative; /* Set position to relative */
+    top: -30px;
+}
+
+.lboard_section {
+	width: 500px;
+	height: 400px;
+	margin: 100px auto 0;
+	background: #2d2d2d;
+	padding: 25px 40px;
+	position: relative;
+	border-radius: 5px;
+	color: #f2f2f2; /* Slightly grey color */
+}
+
+.lboard_section .lboard_tabs ul {
+	display: flex;
+}
+
+.lboard_section .lboard_tabs ul li {
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #f2f2f2; /* Slightly grey color */
+	cursor: pointer;
+}
+
+.lboard_section .lboard_tabs ul li:hover,
+.lboard_section .lboard_tabs ul li.active {
+	color: #c16c83; 
+}
+
+.lboard_wrap {
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.lboard_wrap .lboard_item {
+	padding: 25px;
+}
+
+.lboard_wrap .lboard_mem {
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #444; 
+}
+
+.lboard_wrap .lboard_mem:first-child {
+	padding-top: 0;
+}
+
+.lboard_wrap .lboard_mem:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.lboard_wrap .lboard_mem .img {
+	width: 50px;
+}
+
+.lboard_wrap .lboard_mem img {
+	display: block;
+	width: 100%;
+}
+
+.lboard_wrap .lboard_mem .name_bar {
+	margin: 0 20px;
+	width: calc(100% - 150px);
+}
+
+.lboard_wrap .lboard_mem .name_bar p {
+	color: #f2f2f2; /* Slightly grey color */
+}
+
+.lboard_wrap .lboard_mem .name_bar p span {
+	margin-right: 5px;
+}
+
+.lboard_wrap .lboard_mem .points {
+	width: 100px;
+	color: #f2f2f2; /* Slightly grey color */
+}
+
+.lboard_wrap .lboard_mem .name_bar .bar_wrap {
+	width: 100%;
+	height: 5px;
+	background: #444; 
+	margin-top: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.lboard_wrap .lboard_mem .name_bar .bar_wrap .inner_bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	background: #c16c83;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    
+    .wrapper {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+		top: 0px;
+    height: auto; /* Set height to auto or specific value */
+	position: relative; /* Set position to relative */
+
+    }
+    
+    .lboard_section {
+        width: 100%; /* Full width for smaller screens */
+        margin: 50px auto 0; /* Adjust margin for smaller screens */
+    }
+    
+    .lboard_wrap {
+        top: 70px; /* Adjust top position for smaller screens */
+        left: 20px; /* Adjust left position for smaller screens */
+    }
+}
+
+/* Additional media queries for other screen sizes if needed */
+
+
+  

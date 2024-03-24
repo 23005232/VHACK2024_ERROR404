@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-size: cover;
+  background-position: center top;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center; 
+}
+
+
+.title {
+  font-size: 72px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h1{
+  font-size: 30px;
+  color: white;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #6fb0dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.result {
+	text-align: center;
+	margin-bottom: 20px;
+	color: rgb(250, 250, 250); 
+}
+
+
+.chart-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+
+#backButton {
+  position:fixed; 
+  transform: translateX(-50%); 
+  background-color: #6fb0dc; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+}
